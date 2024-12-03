@@ -6,7 +6,7 @@
  -->
 <html lang="en">
 <head>
-	<title>Event Videos</title>
+	<title></title>
 	<meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -48,7 +48,7 @@
             
             <section>
                 
-                 <h3>Music Option 1</h3>
+                <h3>Music Option 1</h3>
                 <audio controls>
 				<source src="media/audio-happy.mp3" type="audio/mp3">
 				<source src="media/audio-happy.ogg" type="audio/ogg">
@@ -74,15 +74,18 @@
 				<source src="media/audio-tech.ogg" type="audio/ogg">
 				<p>Your legacy browser does not support the audio element.</p>
 				</audio>
-        </main>
-			
-			<section>
-				<video width="100%" height="60%" controls="autoplay">
-				<source src="media/video-dance.mp4" type="video/mp4">
-				</video>
-			</section>
+            </section>
 
+        </main>
+		<video width="100%" height="240" controls="controls">
+			<source src="media/video-dance.mp4" type="video/mp4">
+			<track src=“media/captions.vtt” kind=“captions” srclang=“en” label=“Captions”>
+			<track src=“media/descriptions.vtt” kind=“descriptions” srclang=“en” label=“English Descriptions”>
+			<p>Your browser does not support the video element.</p>
+		</video>
         <!-- Use the footer area to add webpage footer content -->
+        <footer>
+
         <footer>
             <p>Created by: Jancarlo Aguado</p>
         </footer>
