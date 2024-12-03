@@ -1,0 +1,156 @@
+/* Author: Jancarlo Aguado
+Date: 12/1/2024
+File Name: styles.css */
+
+.hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/music-notes.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.welcome {
+  margin-top: 10%;
+}
+
+.bg-dark-purple {
+  background-color: #373684;
+}
+
+.text-dark-purple {
+  color: #373684;
+}
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, ul, section, aside, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Box sizing rule for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Mobile-specific styles (default styles) */
+.tab-desk, #menu-links {
+    display: none;
+}
+
+header {
+    text-align: center;
+    font-size: 1.5em;
+    color: #373684;
+}
+
+header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-size: 1.5em;
+    padding: 4%;
+    margin-right: 15%;
+}
+
+nav {
+    background-color: #373684;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-align: center;  
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #373684;
+}
+
+main {
+    padding: 2%;
+    background-color: #e5e9fc;
+    overflow: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+.action {
+    font-size: 1.25em;
+    color: #373684;
+    font-weight: bold;
+}
+
+#piano, #guitar, #violin {
+    margin: 0 2%;
+}
+
+#info {
+    clear: left;
+    background-color: #c0caf7;
+    padding: 1% 2%;
+}
+
+#info ul {
+    margin-left: 10%;
+}
+
+.round {
+    border-radius: 8px; 
+}
+
+aside {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #373684;
+    text-shadow: 3px 3px 10px #8280cb;
+}
+
+figure {
+    position: relative;
+    max-width: 275px;
+    margin: 2% auto;
+    border: 8px solid #373684;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(55, 54, 132, 0.7); 
+    color: #fff;
+    width: 100%;
+    padding: 5% 0;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#contact, #rental h2, #form h2 {
+    text-align: center;
+}
+
+.tel-link {
+    background-color: #373684;
+    padding: 2%;
