@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Job Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mtjava.css"> <!-- Link to external CSS for styling -->
+</head>
+<body>
+
+    <!-- Header and navigation bar (same as other pages) -->
+	<div id="wrapper">
+    <header>
+			<h1>My-Town Java Coffee House</h1>
+	<nav class="navigation">
+	<ul>
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="menu.html">Menu</a></li>
+	  <li><a href="music.html">Music</a></li>
+	  <li><a href="job.html">Jobs</a></li>
+	</ul>
+	</nav>
+    </header>
+    <section class="application-form">
+        <div class="container">
+            <h2>Apply for a Job</h2>
+            <p>Please fill out the form below to apply for a job with us.</p>
+
+            <form action="submit_form.php" id="job-form">
+                <div class="form-row">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="address">Street Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="zip-code">Zip Code:</label>
+                    <input type="text" id="zip-code" name="zip-code" required pattern="[0-9]{5}">
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="comments">Comment (50 characters per line):</label>
+                    <textarea id="comments" name="comments" rows="4" maxlength="200" required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+		<footer>
+		Copyright &copy; 2025 My-Town Java Coffee House<br>
+		<p>J Aguado</p>
+		<a href="mailto:Aguado@javaCoffee.shop">Aguado@javaCoffee.shop</a>
+		</footer>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+
+    /* 1. Configure the body element */
+    body {
+        margin: 0;
+        background-image: none;
+    }
+
+    /* 2. Configure the wrapper id selector */
+    #wrapper {
+        width: auto;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    /* 3. Configure the header element */
+    header {
+        border-bottom: 5px solid #FEF6C2;
+    }
+
+    /* 4. Configure the h1 element */
+    h1 {
+        margin-top: 0;
+        margin-bottom: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 2.5em;
+    }
+
+    /* 5. Configure the nav element */
+    nav {
+        float: none;
+        width: auto;
+        padding-top: 0;
+        margin: 10px;
+        font-size: 1.3em;
+    }
+
+    /* 6. Configure the nav li selector */
+    nav li {
+        display: inline-block;
+    }
+
+    /* 7. Configure the nav a selector */
+    nav a {
+        padding: 1em;
+        width: 8em;
+        font-weight: bold;
+        border-style: none;
+    }
+
+    /* 8. Configure the nav ul selector */
+    nav ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* 9. Configure the #heroroad, #heromugs, and #heroguitar selectors */
+    #heroroad, #heromugs, #heroguitar {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 10. Configure the main element */
+    main {
+        padding: 0;
+        margin: 0;
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* 1. Configure the header element */
+    header {
+        background-image: url('javamini.jpg');
+        background-size: cover;
+        height: 128px;
+    }
+
+    /* 2. Configure the h1 element */
+    h1 {
+        font-size: 2em;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    /* 3. Configure the nav element */
+    nav {
+        margin: 0;
+    }
+
+    /* 4. Configure the anchor tags in the navigation */
+    nav a {
+        display: block;
+        padding: 0.2em;
+        width: auto;
+        border-bottom: 1px solid #FEF6C2;
+    }
+
+    /* 5. Configure the nav li selector */
+    nav li {
+        display: block;
+    }
+
+    /* 6. Configure the main element */
+    main {
+        padding-top: 1px;
+    }
+
+    /* 7. Configure the h2 element */
+    h2 {
+        padding-top: 0.5em;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    /* 8. Configure the details class */
+    .details {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* 9. Configure the #heroroad, #heromugs, #heroguitar selectors */
+    #heroroad, #heromugs, #heroguitar,{
+        background-image: none;
+        height: auto;
+    }
+
+    /* 10. Configure the floatleft class */
+    .floatleft {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    /* 11. Configure the phone number display */
+    #mobile {
+        display: inline;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+}
